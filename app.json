@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/list",
+    "pages/note-edit/note-edit",
+    "pages/resourceCenter/resourceCenter",
+    "pages/Mine/Mine",
+    "pages/forum/forum",
+    "pages/testquestions/index",
+    "pages/webview/webview",
+    "pages/practice/practice",
+    "pages/login/login",
+    "pages/commit/commit"
+  ],
+  "tabBar": {
+      "color": "#464a56",
+      "selectedColor": "#6595e9",
+      "backgroundColor": "#FFFFFF",
+      "borderStyle": "white",
+      "list": [
+          {
+          "pagePath":"pages/index/index",
+          "text":"首页",
+          "iconPath": "./image/home.png",
+          "selectedIconPath": "./image/home1.png"
+          },
+          {
+            "pagePath":"pages/practice/practice",
+            "text":"练习",
+            "iconPath": "./image/prac.png",
+            "selectedIconPath": "./image/prac1.png"
+          },
+          {
+            "pagePath":"pages/resourceCenter/resourceCenter",
+            "text":"资料",
+            "iconPath": "./image/resource.png",
+            "selectedIconPath": "./image/resource1.png"
+          },
+          {
+            "pagePath":"pages/forum/forum",
+            "text":"论坛",
+            "iconPath": "./image/forum.png",
+            "selectedIconPath": "./image/forum1.png"
+          },
+          {
+            "pagePath":"pages/Mine/Mine",
+            "text":"我的",
+            "iconPath": "./image/mine.png",
+            "selectedIconPath": "./image/mine1.png"
+          }
+      ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我的",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

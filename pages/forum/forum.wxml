@@ -1,0 +1,27 @@
+<scroll-view class="scbg" scroll-y="true">
+<block wx:for="{{forum}}" wx:for-item="name" wx:for-index="id">
+<view class="box">
+<view class="firstblock">
+<image class="touxiang" src="{{name.face_url}}"></image>
+<view class="person">
+<view class="name">
+<text class="showname">{{name.username}}</text>
+</view>
+<view class="time">
+<text class="showtime">{{name.send_timestamp}}</text></view>
+</view>
+</view>
+<view class="secondblock">
+<text class="content">{{name.content}}</text></view>
+<view class="thirdblock">
+    <view class="view"><image class="icon" src="http://qwq.uovou.cn/image/view.png"></image>
+    <text class="num">{{name.total_likes}}</text></view>
+<view class="comment"><image class="icon" src="http://qwq.uovou.cn/image/comment.png"></image>
+    <text class="num">{{name.total_likes}}</text></view>
+<view class="like"><image class="icon" src="http://qwq.uovou.cn/image/likes.png"></image>
+<text class="num">{{name.total_likes}}</text></view>
+</view>
+</view>
+</block>
+</scroll-view>
+<image class="fabiao" src="http://qwq.uovou.cn/image/submit.jpg"  bindtap='ontTap'></image>

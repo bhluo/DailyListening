@@ -1,0 +1,10 @@
+page{
+    background-color: #EFEFEF;
+}
+.textarea{
+    height: 50%;
+    background-color: #dbf2fa;
+}
+.click{
+    margin-top: 20%;
+}

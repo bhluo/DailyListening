@@ -1,0 +1,306 @@
+@keyframes animated-border {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255,255,255,0.4);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(255,255,255,0);
+    }
+  }
+#box {
+    animation: animated-border 1.5s infinite;
+    height: 100rpx;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 10px 15px;
+    line-height: 100rpx;
+    text-align: center;  
+
+  }
+page {
+  background-color:white;
+}
+
+/*头部*/
+.header {
+  background-color: #FFF;
+}
+
+.header .location {
+  width: 120rpx;
+  text-align: center;
+}
+
+.header .location::after {
+  content: '';
+  display: inline-block;
+  border-width: 8rpx;
+  border-style: solid;
+  border-color: #666 transparent transparent transparent;
+
+  position: relative;
+  top: 4rpx;
+  left: 8rpx;
+}
+
+.header .tabs {
+  flex: 1;
+  height: 75rpx;
+  font-weight: 700;
+  margin: 0 120rpx;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .tabs text {
+  padding: 0 20rpx;
+  position: relative;
+}
+
+.header .tabs .current {
+  color: #EF4238;
+}
+
+.header .tabs .current::after {
+  content: '';
+  display: inline-block;
+
+  position: absolute;
+  bottom: 4rpx;
+  left: 0;
+
+  width: 100%;
+  border-bottom: 1px solid #EF4238;
+}
+
+.search {
+  width: 88rpx;
+  height: 88rpx;
+  padding: 20rpx;
+  margin-left: 32rpx;
+  box-sizing: border-box;
+  background-image: url('https://static.botue.com/maoyan/search.png');
+  background-clip: content-box;
+  background-origin: content-box;
+  background-size: contain;
+  border-left: 1rpx solid #E6E6E6;
+}
+
+/*列表*/
+.items {
+  background-color: #FFF;
+ 
+}
+
+.plan {
+  border-top: 1rpx solid #E6E6E6;
+
+}
+
+.items image {
+  width: 128rpx;
+  height: 180rpx;
+}
+
+.item {
+  display: flex;
+  padding: 24rpx 0;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #E6E6E6;
+  position: relative;
+  border-radius: 20rpx;
+}
+
+.item .play {
+  left: 39rpx;
+  top: 50%;
+
+  margin-top: -25rpx;
+}
+
+.item .meta {
+  flex: 1;
+  margin: 0 20rpx;
+}
+
+.item .meta text {
+  display: block;
+  line-height: 1.7;
+  color: #666;
+  font-size: 26rpx;
+}
+
+.item .meta .name {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #333;
+}
+
+.item .meta .actor {
+  width: 440rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.item .meta .count {
+  color: #999;
+}
+
+.item .status {
+  display: flex;
+  align-items: center;
+  
+  position: relative;
+
+  width: 96rpx;
+  margin-right: 30rpx;
+}
+
+.item .status .btn {
+  width: 100%;
+  height: 54rpx;
+  text-align: center;
+  line-height: 54rpx;
+  color: #FFF;
+  font-size: 24rpx;
+  border-radius: 8rpx;
+  background-color: #f03d37;
+}
+
+.item .status .presell {
+  background-color: #3c9fe6;
+}
+
+.item .status .extra {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 160rpx;
+  text-align: right;
+
+  font-size: 30rpx;
+  color: #faaf00;
+}
+
+.item .extra text {
+  font-size: 70%;
+}
+
+.loading {
+  display: block;
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.title {
+  display: block;
+  padding: 24rpx 0 0 30rpx;
+  font-size: 28rpx;
+  color: #333;
+  background-color: #FFF;
+}
+
+scroll-view {
+  height: 396rpx;
+  padding: 24rpx 30rpx;
+  margin-bottom: 20rpx;
+  white-space: nowrap;
+  border-bottom: 1rpx solid #E6E6E6;
+  background-color: #FFF;
+  box-sizing: border-box;
+}
+
+.cell {
+  display: inline-block;
+  width: 170rpx;
+  margin-right: 20rpx;
+
+  position: relative;
+}
+
+.cell:last-child {
+  margin-right: 0;
+}
+
+.cell image {
+  width: 170rpx;
+  height: 230rpx;
+}
+
+.cell text {
+  display: block;
+  line-height: 1.4;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.cell .name {
+  width: 100%;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.cell .collect {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 56rpx;
+  height: 56rpx;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(https://static.botue.com/maoyan/heart.png);
+  background-size: 36rpx;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0 0 8rpx 0;
+}
+
+
+.downloadTitle{
+    margin-top: 40rpx;
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+}
+.downloadImage{
+    width: 30rpx;
+    height:300rpx;
+    padding-left: 40rpx;
+}
+.downloadContent{
+    padding-top: 2rpx;
+    padding-left: 20rpx;
+    
+    height: 60rpx;
+    font-size: 45rpx;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,
+}
+
+.downloadItem{
+    border-bottom: 1rpx solid #E6E6E6;
+    margin-top: 30rpx;
+    background-color: white;
+    width: 650rpx;
+    height: 120rpx;
+    margin-left: 50rpx;
+    margin-top: 10rpx;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ 
+
+

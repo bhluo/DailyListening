@@ -1,0 +1,287 @@
+Page{
+    background-color: #fcf3ec;
+}
+
+.section{
+  display: inline-block;
+  text-align: center;
+}
+
+.section-select {
+  width: 150rpx;
+  background-color: rgb(255, 207, 183);
+  margin-top: 30rpx;
+	margin-left: 75rpx;
+	font-size: 28rpx;
+	height: 70rpx;
+  display: flex;    /*设置显示样式**/
+  align-items: center;    /**子view垂直居中*/
+  vertical-align: center; /**垂直居中*/
+  justify-content: center; /**内容居中*/
+  flex-direction:row; 
+  border-radius: 10rpx;
+  font-family:inherit;
+  font-weight: 500;
+}
+
+.section-sen{
+  display: inline-block;
+  text-align: center;
+  margin-top: 0rpx;
+}
+.hmly-active {
+  width: 150rpx;
+  color: white;
+  border-radius: 10rpx;
+  background-color: #e36a41;
+  
+}
+
+.section-sen-select {
+  width: 250rpx;
+  background-color: rgb(255, 207, 183);
+  margin-top: 50rpx;
+	font-size: 28rpx;
+	height: 70rpx;
+  display: flex;    /*设置显示样式**/
+  align-items: center;    /**子view垂直居中*/
+  vertical-align: center; /**垂直居中*/
+  justify-content: center; /**内容居中*/
+  flex-direction:row; 
+  border-radius: 10rpx;
+  font-family:inherit;
+  font-weight: 500;
+}
+
+
+.hmly-sen-active {
+  width: 250rpx;
+  
+  color: white;
+  border-radius: 10rpx;
+  background-color: #e36a41;
+}
+
+
+/* 播放器 */
+.audioV{
+  width: 100%;
+  position: fixed;
+  overflow: auto;
+  bottom: 0rpx;
+  background: #fff;
+}
+.audioV_L_R{
+  width: 100%;
+  position: relative;
+  overflow: auto;
+}
+.audioV_left{
+  width: 25%;
+  padding: 15rpx 21rpx;
+  box-sizing: border-box;
+  float: left;
+  height: 141rpx;
+}
+.audioV_left_v{
+  position: relative;
+  overflow: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.audioV_left_img{
+  width: 111rpx;
+  height: 100%;
+  position: absolute;
+  /* background-color: red; */
+  border-radius: 8rpx;
+}
+.audioV_left_play{
+  width: 48rpx;
+  height: 48rpx;
+  z-index: 2;
+}
+.audioV_right{
+  width: 75%;
+  float: left;
+  padding: 15rpx 36rpx 0rpx 0rpx;
+  box-sizing: border-box;
+
+}
+.audioV_right_top{
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+}
+.audioV_right_top_name{
+  width: max-content;
+  float: left;
+  font-size: 30rpx;
+  font-family: SourceHanSansCN, SourceHanSansCN-Medium;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 10rpx;
+}
+.audioV_right_top_contro{
+  width: max-content;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.audioV_right_top_last{
+  width: 40rpx;
+  height: 40rpx;
+}
+.audioV_right_top_play{
+  width: 59rpx;
+  height: 59rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.audioV_right_top_next{
+  width: 40rpx;
+  height: 40rpx;
+}
+.audioV_right_contro{
+  width: 100%;
+  height: 6rpx;
+  background: #000;
+  position: relative;
+  border-radius: 20rpx;
+  margin-top: 19rpx;
+}
+.audioV_right_contro view:nth-child(1){
+  height: 100%;
+  background: #944f4c;
+  border-radius: 3rpx;
+  float: left;
+}
+.audioV_right_contro view:nth-child(2){
+  width: 15rpx;
+  height: 15rpx;
+  opacity: 1;
+  background: #944f4c;
+  border-radius: 50%;
+  float: left;
+  margin-top: -5rpx;
+}
+.audioV_right_slider{
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  margin-top: -15rpx;
+  text-align: center;
+}
+.audioV_right_slider slider{
+  width: 96%;
+  margin-left: 15rpx;
+
+}
+radio.wx-radio-input{
+    flex: none;
+  }
+.Option_backgroud{
+            
+    margin-top: 0rpx;
+}
+.ssss{
+    display: flex;
+    width:690rpx;
+    margin-top: 50rpx;
+    margin-left: 25rpx;
+    background-color: white;
+    border-radius:25rpx;
+    font-family:‘Times New Roman’, Times, serif;
+    font-size: 40rpx;
+    padding-top: 15rpx;
+    padding-left: 20rpx;
+}
+radio-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rpx;
+}
+radio{
+    margin-top: 30rpx;
+}
+.submit{
+    background-color: #e36a41;
+    height: 80rpx;
+    width: 450rpx;
+    border-radius: 20rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 20rpx;
+   
+    margin-left: 150rpx;
+}
+radio .wx-radio-input{ 
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 50%;
+}
+
+radio .wx-radio-input.wx-radio-input-checked{
+    background-color: rgb(134, 194, 240) !important;
+    border-color: blueviolet !important;
+   
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before{
+    content:'';
+    width: 18rpx;
+    height: 18rpx;
+    border-radius: 50%;
+    background-color: rgb(44, 194, 215);
+}
+
+.Aquestion{
+    display: flex;
+    width:690rpx;
+    margin-top: 50rpx;
+    margin-left: 30rpx;
+    background-color: #f7f7f7;
+    border-radius: 20rpx;
+    font-family:‘Times New Roman’, Times, serif;
+    font-size: 40rpx;
+    color: #e36a41;
+}
+.Aana{
+    display: flex;
+    width:690rpx;
+    margin-top: 15rpx;
+    margin-left: 30rpx;
+    background-color: #f7f7f7;
+    border-radius: 20rpx;
+    font-family:‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36rpx;
+    color: #000000;
+    background-image: linear-gradient();
+}
+.analysis{
+    text-align:center;
+    font-size: 42rpx;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Option{
+    background-color: white;
+    border-radius: 25rpx;
+    
+}
+.content{
+    background-color: #fcf3ec;
+}
+.content_text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42rpx;
+}

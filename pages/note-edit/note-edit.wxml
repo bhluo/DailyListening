@@ -1,0 +1,11 @@
+<!--背景-->
+<image class="the-image" src="{{image}}"></image>
+
+  
+ <!--输入框-->
+ <view class="the-view">
+   <textarea class= "the-textarea"  bindinput="bindTextAreaBlur" style="  margin: 5%;width: 90%;height: 90%" auto-focus value="{{des}}"maxlength="-1" cursor-spacing="0">
+   </textarea>
+ </view>
+ <text class="the-text">{{time}}</text>
+ <button class="the-btn" bindtap="btnDown">保 存</button>

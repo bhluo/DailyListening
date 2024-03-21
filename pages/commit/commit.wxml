@@ -1,0 +1,6 @@
+<form bindsubmit="btnSub">
+<view class="textarea" >
+<textarea placeholder=" 分享你独特的观点吧~" placeholder-style="color:#888888c;font-size:38rpx;" class="textinput" maxlength="-1" bindinput="bindTextAreaBlur"></textarea>
+</view>
+<button type="primary" class="click" form-type="submit">提交</button>
+</form>

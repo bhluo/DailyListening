@@ -1,0 +1,180 @@
+<!-- 头部 -->
+<view class="header">
+	<!-- 切换 -->
+	<view class="tabs">
+		<text catchtap='handleTap' data-active='hot' class="{{active=='hot'?'current':''}}">原题下载</text>
+		<text catchtap='handleTap' data-active='coming' class="{{active=='coming'?'current':''}}">每日一读</text>
+	</view>
+	<!-- 搜索 -->
+
+</view>
+<view style="background-color: #63a3f7;margin-top:-20rpx;height: 150rpx;"hidden="{{active == 'coming'}}">
+    <view style="padding-top: 30rpx;" id="box" >距离六级考试还有{{curtime}}天</view>
+    </view>
+<view class="items hots" hidden="{{active == 'coming'}}">
+
+<view class="downloadTitle">
+    <image style="height:70rpx; width: 65rpx; margin-top: 9rpx; "src="http://qwq.uovou.cn/image/rscdown.png" class="downloadImage"></image>
+    <view class="downloadContent">真题下载</view>
+</view>
+
+<view class="downloadItem" bindtap="download">四级2022年6月第一套</view>
+<view class="downloadItem">四级2022年6月第二套</view>
+<view class="downloadItem">四级2022年6月第三套</view>
+<view class="downloadItem" wx:if="{{t_more}}">六级2022年6月第一套</view>
+<view class="downloadItem" wx:if="{{t_more}}">六级2022年6月第二套</view>
+<text class="loading" bindtap="t_more_fun">加载更多...</text>
+</view>
+
+
+<view class="items-wrap" hidden="{{active == 'hot'}}">
+    <swiper indicator-dots="true" autoplay="true" style="margin-top: 30rpx;">
+    <swiper-item >
+        <image style="height:300rpx; width: 650rpx; margin-left: 50rpx; " src="http://qwq.uovou.cn/image/source1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+        <image style="height:300rpx; width: 650rpx; margin-left: 50rpx;  " src="http://qwq.uovou.cn/image/source2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+        <image style="height:300rpx; width: 650rpx; margin-left: 50rpx;  " src="http://qwq.uovou.cn/image/source3.jpg"></image>
+    </swiper-item>
+</swiper>
+	<!-- 列表 -->
+	<view class="items plan">
+		<text class="title">英文文章</text>
+		
+			<view class="item">
+
+				<image src="http://qwq.uovou.cn/image/first.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">《心灵奇旅》</text>
+					<text class="actor">类型: 暖冬治愈之作</text>
+					<text class="count">英语短文阅读</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<view class="extra">
+						8.5<text>分</text>
+					</view>
+          <text class="btn" bindtap='dianji' data-webview="https://mp.weixin.qq.com/s/ZE_D4pofM7ZWUNuqH3a9fg">阅读</text>
+				</view>
+			</view>
+		
+	
+			<view class="item">
+
+
+				<image src="http://qwq.uovou.cn/image/second.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">如何让手机自我修复？答案是亚麻籽油</text>
+					<text class="actor">类型: 科学科普</text>
+					<text class="count">英语短文阅读</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<view class="extra">
+						8.1<text>分</text>
+					</view>
+					<text class="btn" bindtap='dianji' data-webview="https://mp.weixin.qq.com/s/4ZpOvFY5ob5UuWvv5j3z9w">阅读</text>
+				</view>
+			</view>
+
+		
+		
+			<view class="item">
+				<image src="http://qwq.uovou.cn/image/third.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">世界上最丑的兰花</text>
+					<text class="actor">类型: 自然科普</text>
+					<text class="count">英语短文阅读</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<view class="extra">
+						8.6<text>分</text>
+					</view>
+					<text class="btn" bindtap='dianji' data-webview="https://mp.weixin.qq.com/s/s1LPa85wh5nYtY5NfGHMSQ">阅读</text>
+				</view>
+			</view>
+
+			<view class="item">
+				<image src="http://qwq.uovou.cn/image/third.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">“纯金”版AirPods Max来了</text>
+					<text class="actor">类型: 生活科普</text>
+					<text class="count">英语短文阅读</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<view class="extra">
+						7.9<text>分</text>
+					</view>
+					<text class="btn" bindtap='dianji' data-webview="https://mp.weixin.qq.com/s/s1LPa85wh5nYtY5NfGHMSQ">阅读</text>
+				</view>
+			</view>
+	
+		
+			<view class="item">
+		
+				<image src="http://qwq.uovou.cn/image/second.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">我国超半数成年人肥胖或超重</text>
+					<text class="actor">类型: 科学科普</text>
+					<text class="count">英语短文阅读</text>
+				</view>
+	
+				<view class="status">
+					<view class="extra">
+						8.6<text>分</text>
+					</view>
+					<text class="btn" bindtap='dianji' data-webview="https://mp.weixin.qq.com/s/Eox2bvBfzx880dCmtobjSA">阅读</text>
+				</view>
+			</view>
+
+            <text class="title">英文小诗</text>
+			<view class="item">
+
+				<image src="http://qwq.uovou.cn/image/second.png"></image>
+		
+				<view class="meta">
+					<text class="name">英文小诗</text>
+					<text class="actor">作者: 狄金森</text>
+					<text class="count">英语小诗阅读</text>
+				</view>
+		
+				<view class="status">
+					<view class="extra">
+						8.6<text>分</text>
+					</view>
+					<text class="btn" bindtap='dianji' data-webview="https://mp.weixin.qq.com/s/kjNPSRS0Sqf-QOVciFH--Q">阅读</text>
+				</view>
+			</view>
+		
+
+			<view class="item">
+				<image src="http://qwq.uovou.cn/image/second.png"></image>
+			
+				<view class="meta">
+					<text class="name">英文小诗</text>
+					<text class="actor">作者: 狄金森</text>
+					<text class="count">英语小诗阅读</text>
+				</view>
+			
+				<view class="status">
+					<view class="extra">
+						8.6<text>分</text>
+					</view>
+					<text class="btn" bindtap='dianji' data-webview="https://mp.weixin.qq.com/s/38jhrdy8bdR2hTbujbVCtw">阅读</text>
+				</view>
+			</view>
+
+		
+		
+	</view>
+</view>
+

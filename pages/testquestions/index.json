@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    
+
+  },
+  "navigationBarBackgroundColor": "#e36a41",
+  "navigationBarTitleText": "年12月四级真题卷",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#efefef",
+  "backgroundTextStyle":"dark"
+  
+
+  
+}

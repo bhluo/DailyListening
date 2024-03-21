@@ -1,0 +1,76 @@
+<wxs module="filters" src="../../utils/addmul.wxs"></wxs>
+<view>
+    <view class="section" wx:for="{{Lsection}}" wx:key="index">
+        <view class="section-select {{index === activeIndexleft ? 'hmly-active':''}}" data-index="{{index}}" data-id="{{index}}" bindtap="changeleft">
+            {{item.title}}
+        </view>
+    </view>
+</view>
+
+<view>
+
+    <view class="section-sen" wx:for="{{Lsectionsen}}" wx:key="index">
+        <view class="section-sen-select {{index === activeIndexleftsen ? 'hmly-sen-active':''}}" data-index="{{index}}" data-id="{{index}}" bindtap="changeleftsen">
+            {{item.title}}
+        </view>
+    </view>
+</view>
+
+
+<view class="Option_backgroud" hidden="{{indexcontent!=question}}">
+    <view class="ssss" wx:for="{{Qarray}}" wx:for-item="pre">{{pre.numble}}.<radio-group bindchange="radioChange" data-parentindex="{{index+1}}">
+            <label class="Option" wx:for="{{arr[index+question_index].fir}}" wx:for-item="thiss" wx:for-index="childindex" style="color: {{thiss.backgroundColor}};">
+                <radio value="{{childindex+1}}"></radio>
+                {{thiss.content}}
+            </label>
+        </radio-group>
+    </view>
+    <view class="submit" bindtap="Lsubmit">提交</view>
+    <view style="height: 200rpx;"></view>
+</view>
+<view hidden="{{indexcontent!=analysis}}">
+    <view wx:for="{{frequency}}">
+        <view class="Aquestion">{{analysissR[index+question_index].question}}</view>
+        <view class="Aana">{{analysissR[index+question_index].analy}}</view>
+
+    </view>
+    <view style="height: 170rpx;"></view>
+</view>
+<view class="content" hidden="{{indexcontent!=content}}">
+
+    <text class="content_text">{{textContent[0].content}}</text>
+    <view style="height: 170rpx;"></view>
+</view>
+
+
+<view class="audioV" wx:if="{{audio!=''}}">
+    <view class="audioV_L_R">
+        <!-- 左边的图片 -->
+        <view class="audioV_left">
+            <view class="audioV_left_v">
+                <image class="audioV_left_img" src="http://qwq.uovou.cn/image/musics.png"></image>
+                <image class="audioV_left_play" src="http://qwq.uovou.cn/image/stop.png" wx:if="{{isplay==false}}" bindtap="clickplay"></image>
+                <image class="audioV_left_play" src="http://qwq.uovou.cn/image/stop.png" wx:if="{{isplay==true}}" bindtap="stop"></image>
+            </view>
+        </view>
+        <!-- 右边的控制 -->
+        <!-- 右边的控制 -->
+        <view class="audioV_right">
+            <view class="audioV_right_top">
+                <view class="audioV_right_top_name">{{Tyear}}年四月英语听力试题</view>
+                <view class="audioV_right_top_contro">
+                    <image class="audioV_right_top_last" src="http://qwq.uovou.cn/image/last.png" bindtap="getLast"></image>
+                    <image class="audioV_right_top_play" wx:if="{{isplay==false}}" bindtap="clickplay" src="http://qwq.uovou.cn/image/stop.png"></image>
+                    <image class="audioV_right_top_play" wx:if="{{isplay==true}}" bindtap="stop" src="http://qwq.uovou.cn/image/stop.png"></image>
+                    <image class="audioV_right_top_next" src="http://qwq.uovou.cn/image/next.png" bindtap="getNext"></image>
+                </view>
+            </view>
+            <!-- 拖动条--进度条 -->
+            <view class="audioV_right_slider">
+
+                <slider line-size="{{15}}" color="#000" blockColor="#944f4c" bindchange='sliderChange' activeColor='#944f4c' block-size="{{13}}" value='{{playP}}' step="1" />
+                <view style="font-size: 25rpx; text-align: left; margin-top: -15rpx;">{{filters.toFix(playTime/60)}}:{{zero}}{{filters.toFix(playTime%60)}}</view>
+            </view>
+        </view>
+    </view>
+</view>

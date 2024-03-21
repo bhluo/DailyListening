@@ -1,0 +1,106 @@
+
+  <view class="top">
+    <image src="http://qwq.uovou.cn/image/listen-background.png" style="height: 410rpx;width: 100%;"></image>
+  </view>
+  <view class="bottom">
+    <view class="hmly-ification">
+    <!-- 最左边部分 -->
+	<scroll-view 
+		class="hmly-scroll-max-left" 
+		scroll-y 
+		scroll-with-animation 
+		style="height:{{phoneHeight}}rpx"
+		scroll-top="{{VerticalNavTop}}"
+	>
+		<block wx:for="{{ificationGrade}}" wx:key="index">
+			<view class="hmly-left-title {{index === activeIndexleft ? 'hmly-active':''}}" data-index="{{index}}"
+				data-id="{{index}}" bindtap="changeleft">
+				{{item.title}}
+			</view>
+		</block>
+	</scroll-view>
+	<!-- 左边部分 -->
+	<scroll-view 
+		class="hmly-scroll-left" 
+		scroll-y 
+		scroll-with-animation 
+		style="height:{{phoneHeight}}rpx"
+		scroll-top="{{VerticalNavTop}}"
+	>
+		<block wx:for="{{ificationTitle}}" wx:key="index">
+			<view class="hmly-left-title {{index === activeIndex ? 'hmly-active':''}}" data-index="{{index}}"
+				data-id="{{index}}" bindtap="change">
+				{{item.title}}
+			</view>
+		</block>
+	</scroll-view>
+
+  <!-- 右边部分 -->
+	<scroll-view 
+		class="hmly-scroll-right" 
+		scroll-y 
+		bindscroll="showActive" 
+		style="height:{{phoneHeight}}rpx"
+		
+	>
+		<view class="hmly-content-scroll-item">
+      <view class="hmly-content-block">
+			<block>
+        <view class="hmly-content-title">{{ificationTitle[activeIndex].title}}年6月第一套</view>
+        <view class="hmly-content-message">
+          {{peonumble[0].Pnumble}}人已练习|平均正确率{{peonumble[0].accuracy}}%
+        </view>
+        <view class="hmly-content-start" bindtap="enter0">
+          开始学习
+          <image src="http://qwq.uovou.cn/image/start.png" style="height: 25rpx; width: 30rpx;margin-left: -10rpx;"></image>
+        </view>
+      </block>
+    </view>
+    
+    <view class="hmly-content-block">
+        <block>
+          <view class="hmly-content-title">{{ificationTitle[activeIndex].title}}年6月第二套</view>
+          <view class="hmly-content-message">
+            {{peonumble[1].Pnumble}}人已练习|平均正确率{{peonumble[1].accuracy}}%
+          </view>
+          <view class="hmly-content-start" bindtap="enter1">
+            开始学习
+            <image src="http://qwq.uovou.cn/image/start.png" style="height: 25rpx; width: 30rpx;margin-left: -10rpx;"></image>
+          </view>
+        </block>
+      </view>
+
+      <view class="hmly-content-block">
+        <block>
+          <view class="hmly-content-title">{{ificationTitle[activeIndex].title}}年12月第一套</view>
+          <view class="hmly-content-message">
+            {{peonumble[2].Pnumble}}人已练习|平均正确率{{peonumble[2].accuracy}}%
+          </view>
+          <view class="hmly-content-start" bindtap="enter2">
+            开始学习
+            <image src="http://qwq.uovou.cn/image/start.png" style="height: 25rpx; width: 30rpx;margin-left: -10rpx;"></image>
+          </view>
+        </block>
+      </view>
+
+
+      <view class="hmly-content-block">
+        <block>
+          <view class="hmly-content-title">{{ificationTitle[activeIndex].title}}年12月第二套</view>
+          <view class="hmly-content-message">
+            {{peonumble[3].Pnumble}}人已练习|平均正确率{{peonumble[3].accuracy}}%
+          </view>
+          <view class="hmly-content-start" bindtap="enter3">
+            开始学习
+            <image src="http://qwq.uovou.cn/image/start.png" style="height: 25rpx; width: 30rpx;margin-left: -10rpx;"></image>
+          </view>
+        </block>
+      </view>
+
+      
+      
+		</view>
+	</scroll-view>
+	</view>
+
+  </view>

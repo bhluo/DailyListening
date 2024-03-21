@@ -1,0 +1,45 @@
+<view class="user">
+<view class="user-info">
+<image class="face" src="{{userInfo? userInfo.avatarUrl: 'http://qwq.uovou.cn/image/user.png'}}"></image>
+<view class="info">
+    <text class="name">{{userInfo? userInfo.nickName: '游客用户'}}</text>
+    </view>
+</view>
+<view class="user-check" wx:if="{{daka=='false'}}" bindtap='qiandao'>点击签到</view>
+        <view class="user-check" wx:if="{{daka=='true'}}">今日已签到~</view>
+</view>
+
+<view class="about">
+  <image class="aboutpic" src="http://qwq.uovou.cn/image/read.jpg"></image>
+  <view class="aboutword1">英语听力-四六级必过</view>
+  <text>\n</text>
+<view class="aboutword2">真题分段练习，最短时间帮你通...</view>
+<view class="aboutword3">了解小程序></view>
+  </view>
+  <view class="text1" bindtap="showSentence">点击查看今天的每日一句~</view>
+
+<!-- <view class="data"><view class="left-data">今日练习题目<text>\n</text><view class="number">9题</view></view><view class="line"></view><view class="right-data">今日正确率<text>\n</text><view class="number">77%</view></view></view> -->
+<view class="choosebook">
+    <text class="cleft">-已选择《{{book}}》</text>
+    <view class="cline"></view>
+    <view class="cright" bindtap="choosebook">切换单词本</view>
+</view>
+<text>\n</text>
+<view class="start" bindtap="gotopractice">
+    <image class="start-img"src="http://qwq.uovou.cn/image/study.png"></image>
+    <text class="start-text">开始练习</text>
+</view>
+<view class="note" bindtap="note">
+    <image class="note-img"src="http://qwq.uovou.cn/image/plan.png"></image>
+    <text class="note-text">每日计划</text>
+</view>
+<!-- <button class="btn" bindtap="gotopractice">开始练习</button> -->
+
+
+<modal title="每日一句" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+  <view>
+    <image class="image" src="{{Sentence.data.pic}}" mode='aspectFill'></image>
+  </view>
+  <view style="font-size: 38rpx;">{{Sentence.data.en}}</view>
+  <view style="font-size: 38rpx;">{{Sentence.data.zh}}</view>
+</modal>

@@ -1,0 +1,150 @@
+<!--pages/Mine/Mine.wxml-->
+<view class="main">
+    <!-- 用户信息 -->
+    <view class="upper-half">
+    <view class="user-info" bindtap="goLogin">
+        <image class="userBackground" src="http://qwq.uovou.cn/image/userbg.jpg"></image>
+        <image class="avatar" src="{{userInfo? userInfo.avatarUrl: 'http://qwq.uovou.cn/image/user.png'}}"></image>
+        <view class="info">
+            <text class="name">{{userInfo? userInfo.nickName: '点击登录'}}</text>
+        </view>
+        <image class="setting" bindtap="setting" src="http://qwq.uovou.cn/image/set.png"></image>
+    </view>
+    <!-- 信息统计 -->
+    <view class="statistics">
+        <view class="statistics-partition">
+            <view class="partition-data1">90%</view>
+            <view class="partition-info">
+            <image class="partition-img" src="http://qwq.uovou.cn/image/right.png"></image>
+            <text class="partition-title">正确率</text>
+            </view>
+        </view>
+        <view class="statistics-partition">
+            <view class="partition-data2">10套</view>
+            <view class="partition-info">
+            <image class="partition-img" src="http://qwq.uovou.cn/image/practice.png"></image>
+            <text class="partition-title">总练习</text>
+            </view>
+        </view>
+        <view class="statistics-partition">
+            <view class="partition-data3">50分</view>
+            <view class="partition-info">
+            <image class="partition-img" src="http://qwq.uovou.cn/image/jifen.png"></image>
+            <text class="partition-title">总积分</text>
+            </view>
+        </view>
+    </view>
+    </view>
+    <!-- 过渡 -->
+    <view class="transition"></view>
+    <!-- 功能布局 -->
+    <view class="function">
+        <view class="function-firstDetail">
+            <image class="function-img" src="http://qwq.uovou.cn/image/studyrecord.png"></image>
+            <text class="function-title">学习记录</text>
+            <image class="function-rightArrow" src="http://qwq.uovou.cn/image/rightArrow.png"></image>
+        </view>
+        <view class="function-otherDetail" bindtap="note">
+            <image class="function-img" src="http://qwq.uovou.cn/image/dailygoal.png"></image>
+            <text class="function-title">每日计划</text>
+            <image class="function-rightArrow" src="http://qwq.uovou.cn/image/rightArrow.png"></image>
+        </view>
+        <view class="function-otherDetail">
+            <image class="function-img" src="http://qwq.uovou.cn/image/wrongquestionset.png"></image>
+            <text class="function-title">我的错题集</text>
+            <image class="function-rightArrow" src="http://qwq.uovou.cn/image/rightArrow.png"></image>
+        </view>
+        <view class="function-otherDetail">
+            <image class="function-img" src="http://qwq.uovou.cn/image/articlecollection.png"></image>
+            <text class="function-title">文章收藏</text>
+            <image class="function-rightArrow" src="http://qwq.uovou.cn/image/rightArrow.png"></image>
+        </view>
+        <view class="function-otherDetail" bindtap="modalinput">
+            <image class="function-img" src="http://qwq.uovou.cn/image/questionfeedbk.png"></image>
+            <text class="function-title">问题反馈</text>
+            <image class="function-rightArrow" src="http://qwq.uovou.cn/image/rightArrow.png"></image>
+        </view>
+        <modal hidden="{{hiddenmodalput}}" title="欢迎留言" 
+   			confirm-text="提交" cancel-text="取消" bindcancel="modalinput" 
+   			bindconfirm="confirm">
+     <textarea bindinput="bindTextAreaBlur" placeholder="您可以直接留言或者微信联系我们"></textarea>
+   </modal>
+        <view class="function-otherDetail" bindtap="loginOut">
+            <image class="function-img" src="http://qwq.uovou.cn/image/logout.png"></image>
+            <text class="function-title">退出登录</text>
+            <image class="function-rightArrow" src="http://qwq.uovou.cn/image/rightArrow.png"></image>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

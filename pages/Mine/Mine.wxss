@@ -1,0 +1,156 @@
+/* pages/Mine/Mine.wxss */
+.main{
+    width: 100%;
+    background: rgb(249, 250, 252);
+}
+upper-half{
+    z-index:50;
+    background: lawngreen;
+}
+/* 用户信息 */
+.user-info{
+    width:100%;
+    height:280rpx;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20rpx;
+    background:rgb(217, 242, 255);
+    position: absolute;
+    z-index: 2;
+}
+.userBackground{
+    display: flex;
+    position:absolute;
+    width: 100%;
+    height: 280rpx;
+    z-index: -1;
+}
+.avatar{
+    margin-left: 30rpx;
+    width: 125rpx;
+    height:125rpx;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: white;
+}
+.name{
+    flex:1;
+    height:85epx;
+    padding-left: 30rpx;
+    display:inline-block;
+    font-size: 40rpx;
+    z-index: 2;
+}
+.setting{
+    height: 50rpx;
+    width: 50rpx;
+    position: absolute;
+    right:0;
+    margin-right: 76rpx;
+    z-index: 2;
+}
+.statistics{
+    display: flex;
+    margin-left:95rpx ;
+    margin-top:240rpx ;
+    width:540rpx;
+    height:180rpx;
+    
+    border-radius: 5%;
+    position: absolute;
+    z-index: 3;
+}
+.statistics-partition{
+    width:160rpx;
+    height:160rpx;
+    background: white;
+    margin:10rpx ;
+    border-radius: 50%;
+}
+.partition-data1{
+    font-size: 60rpx;
+    padding-top: 40rpx;
+    padding-left: 30rpx;
+    font-family:cursive;
+    color:rgb(223, 74, 106);
+}
+.partition-data2{
+    font-size: 60rpx;
+    padding-top: 40rpx;
+    padding-left: 30rpx;
+    font-family:cursive;
+    color:rgb(80, 105, 186);
+}
+.partition-data3{
+    font-size: 60rpx;
+    padding-top: 40rpx;
+    padding-left: 30rpx;
+    font-family:cursive;
+    color:rgb(202, 188, 56);
+}
+.partition-info{
+    padding-left: 10rpx;
+    height: 60rpx;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.partition-title{
+    padding-left: 10rpx;
+    font-size: 25rpx;
+    font-family:sans-serif;
+    color: rgb(167, 178, 187);
+}
+.partition-img{
+    border-top:10rpx;  
+    width: 23rpx;
+    height:23rpx;
+    margin-left: 20rpx;
+}
+.transition{
+    height:450rpx;
+}
+.function{
+    height:600rpx;
+    width: 690rpx;
+    margin-left: 30rpx;
+}
+.function-firstDetail{
+    display:flex;
+    height: 90rpx;
+    width:690rpx;
+    border-radius: 10rpx;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    position: relative;
+    margin-top: 5rpx;
+}
+.function-otherDetail{
+    display:flex;
+    height: 90rpx;
+    width:690rpx;
+    margin-top: 5rpx;
+    border-radius: 10rpx;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+.function-img{
+    margin-left: 30rpx;
+    height: 40rpx;
+    width:40rpx;
+}
+.function-title{
+    font-size: 37rpx;
+    padding-left: 10rpx;
+    color: rgb(142, 157, 168);
+}
+.function-rightArrow{
+    position: absolute;
+    right:0;
+    margin-right: 30rpx;
+    height: 50rpx;
+    width:50rpx;
+    font-family:fantasy;
+}

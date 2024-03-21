@@ -1,0 +1,90 @@
+/**index.wxss**/
+.containers{
+  flex-direction: column;
+  width: 100%;
+}
+
+.top{
+ position: relative;
+ height: 350rpx;
+ width: 100%;
+ 
+}
+
+
+.bottom{
+  background-color:rgb(248, 247, 247);
+  height: 950rpx;
+  width: 100%;
+  position: relative;
+  margin-top: -37rpx;
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  
+}
+
+.hmly-ification {
+	width: 100%;
+	height: 100%;
+  background-color: rgb(243, 244, 246);
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+	display: flex;
+	justify-content: start;
+}
+.hmly-scroll-max-left{
+  width: 22%;
+	padding-top: 55rpx;
+  margin-right: 20rpx;
+  border-top-left-radius: 50rpx;
+	background-color: #fff;
+	overflow: hidden;
+}
+.hmly-scroll-left {
+	width: 22%;
+	padding-top: 55rpx;
+  margin-right: 20rpx;
+  margin-left: -19rpx;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.hmly-left-title {
+	text-align: center;
+	font-size: 28rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+}
+.hmly-active {
+	color: #ff520f;
+	background-color: rgb(243, 244, 246);
+}
+
+.hmly-content-block{
+  
+  height: 210rpx;
+  width: 440rpx;
+  background-color: rgb(255, 207, 183);
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+  border-radius: 20rpx;
+}
+.hmly-content-title{
+  margin-top: 50rpx;
+  padding-top: 20rpx;
+  text-align:left;
+  font-weight: 500;
+  margin-left: 15rpx
+}
+.hmly-content-message{
+  font-size: xx-small;
+  
+  font-weight:100;
+  margin-left: 15rpx
+}
+.hmly-content-start{
+  margin-top: 20rpx;
+  font-size: small;
+  color: rgb(226, 101, 60);
+  margin-left: 15rpx
+}
